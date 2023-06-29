@@ -1,4 +1,4 @@
-import java.io.*;
+
 import java.util.*;
 
 public class longestSubstring {
@@ -11,7 +11,6 @@ public class longestSubstring {
 
     public static int lengthOfLongestSubstring(String s) {
         Stack<Character> sub1 = new Stack<>();
-        String substring;
         int count = 0;
         int output = 0;
         // System.out.println(s.charAt(0));
