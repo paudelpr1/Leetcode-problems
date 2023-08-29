@@ -1,0 +1,30 @@
+class Solution {
+    public int romanToInt(String s) {
+        HashMap<Character, Integer> storage = new HashMap<>();
+        storage.put('I', 1);
+        storage.put('V', 5);
+        storage.put('X', 10);
+        storage.put('L', 50);
+        storage.put('C', 100);
+        storage.put('D', 500);
+        storage.put('M', 1000);
+
+        int val = 0; 
+        int result = 0; 
+        for(int i = s.length()-1; i >= 0; i--){
+            if(storage.get(s.charAt(i)) >= val)
+            {
+                val = storage.get(s.charAt(i));
+                result += val;
+            }
+            else
+            {
+                val =  storage.get(s.charAt(i));
+                result -= val;
+            }
+            
+        }
+
+        return result;
+    }
+}
