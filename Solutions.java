@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.*; 
 
-public class Solution {
+public class Solutions {
     /*
      * @param strs: a list of strings
      * @return: encodes a list of strings to a single string.
